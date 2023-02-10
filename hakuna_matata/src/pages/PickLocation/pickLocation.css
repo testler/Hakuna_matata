@@ -1,0 +1,34 @@
+.pickLocationPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locateBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options {
+  width: 100%;
+}
+
+.checkBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 149px;
+  align-content: center;
+}
+
+.checkBox {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 15px;
+  padding: 2%;
+}
+
+.inputForm {
+  width: 100%;
+}

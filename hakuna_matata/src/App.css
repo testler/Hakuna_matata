@@ -1,1 +1,11 @@
-/*  */
+#navBox {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 67px;
+  background-color: rgb(198, 198, 198);
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
