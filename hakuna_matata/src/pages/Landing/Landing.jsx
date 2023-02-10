@@ -18,14 +18,14 @@ function Landing() {
       <div className="wasteExamples">
         <div className="exampleBox">
           <p className="exampleTitle">Food Wasted in the U.S.</p>
-          <div className="example">
+          <div className="example" id="example1">
             <h2 className="exampleCount">130</h2>
             <p className="exampleDesc">Billion Meals</p>
           </div>
         </div>
         <div className="exampleBox">
           <p className="exampleTitle">Meals Provided by Eco-Pantry</p>
-          <div className="example">
+          <div className="example" id="example2">
             <h2 className="exampleCount">200,000</h2>
             <p className="exampleDesc">Meals Sold</p>
           </div>

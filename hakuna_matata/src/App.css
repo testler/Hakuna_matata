@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "CenturyGothic-regular";
+  src: url("./century-gothic-2/CenturyGothic.ttf");
+}
+
+@font-face {
+  font-family: "CenturyGothic-bold";
+  src: url("./century-gothic-2/GOTHICB.TTF");
+}
+
+:root {
+  --font-style1: "CenturyGothic-regular";
+  --font-style2: "CenturyGothic-bold";
+}
+
+.App {
+  font-family: CenturyGothic-regular;
+}
+
 div#navBox {
   display: none;
   position: fixed;
