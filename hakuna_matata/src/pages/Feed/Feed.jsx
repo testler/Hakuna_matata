@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Modal from "react-modal";
 import { useState } from "react";
 import FeedModal from "../../components/FeedModal/FeedModal";
-import posts from "../../../dummy_db";
+import posts from "../../dummy_db";
 import PostCard from "../../components/PostCard/postCard";
 
 function Feed({ favArr }) {
