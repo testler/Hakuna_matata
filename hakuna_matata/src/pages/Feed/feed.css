@@ -1,0 +1,41 @@
+div#main-feed{
+    background-color:rgba(240, 235, 227, 1);
+    height: 100%;
+    width: 100%;
+}
+div#feed-header{
+    display: flex;
+    justify-content: space-around;
+}
+img#square-logo{
+    height: 5rem;
+}
+input#city{
+    height: 2vh;
+    width: 30vw;
+    margin: auto 0;
+    text-align: center;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: underline;
+}
+select#input-distance{
+    height: 2vh;
+    width: 15vw;
+    margin: auto 0;
+    border-color: transparent;
+    background-color: transparent;
+}
+svg#gear-icon{
+    background-color: transparent;
+    fill: rgb(105, 105, 105);
+    margin: auto 0;
+}
+h3#offer-main-feed-tagline{
+    text-align: center;
+}
+button#modal-open{
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+}

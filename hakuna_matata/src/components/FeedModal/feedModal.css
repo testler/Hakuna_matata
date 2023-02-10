@@ -1,0 +1,10 @@
+
+div#feed-modal{
+    padding: 5vw;
+    background-color: #C4D1C3;;
+    margin: 5vw;
+    border-radius: 10px;
+}
+div#feed-modal > div > img{
+    width: 10rem;
+}
