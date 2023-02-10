@@ -4,6 +4,7 @@ import { useState } from "react";
 import FeedModal from "../../components/FeedModal/FeedModal";
 import posts from "../../dummy_db";
 import PostCard from "../../components/PostCard/postCard";
+import { useEffect } from "react";
 
 function Feed({ favArr }) {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -17,6 +18,9 @@ function Feed({ favArr }) {
   function closeModal() {
     setIsOpen(false);
   }
+  useEffect(() => {
+    document.getElementById("navBox").style.display = "flex";
+  }, []);
   return (
     <div>
       <Modal className="modal" isOpen={modalIsOpen} onRequestClose={closeModal}>
@@ -28,7 +32,9 @@ function Feed({ favArr }) {
       <img id="gear-icon" />
       <h3>Offers Near You</h3>
       {posts.map((post) => {
-        return <PostCard post={post} favArr={favArr} onClick={modalOpen(post)} />
+        return (
+          <PostCard post={post} favArr={favArr} onClick={modalOpen(post)} />
+        );
       })}
     </div>
   );
