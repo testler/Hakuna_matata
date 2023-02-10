@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-function Landing({ guestLogIn }) {
+function Landing() {
   return (
     <div className="landingPage">
-      <img className="landingLogo">Eco-Pantry</img>
+      <h1 className="landingLogo">Eco-Pantry</h1>
       <h1 className="">Welcome Friends!</h1>
       <p className="about">blah blah blah...click below to start shopping!</p>
       <Link className="startButton" to={`/pickLocation`}>
