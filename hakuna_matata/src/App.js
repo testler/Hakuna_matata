@@ -1,23 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Routes, Route } from "react-router-dom";
+import Landing from './pages/Landing/Landing';
+import Nav from './components/Nav';
+import Feed from './pages/Feed/Feed';
+import Favorites from './pages/Favorites/Favorites';
+import Map from './pages/Map/Map';
+import Profile from './pages/Profile/Profile';
 function App() {
+
+  let guestLogIn = false;
+
+  //Empty array to add favorites to
+  let favArr = [];
+
+
+  if(guestLogIn){
+    document.getElementById("footer").style.display = "flex";
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="pages">
+        <Routes>
+          <Route index element={<Landing/>} />
+          <Route path="/pickLocation" element={<PickLocation guestLogIn={guestLogIn}/>} />
+          <Route path="/feed" element={<Feed favArr={favArr}/>} />
+          <Route path="/map" element={<Map/>} />
+          <Route path="/favorites" element={<Favorites favArr={favArr}/>} />
+          <Route path="/profile" element={<Profile/>} />
+        </Routes>
+      </div>
+      <Nav id="footer"/>
     </div>
   );
 }
