@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-
+import "./Nav.css";
 
 const Nav = () => {
   return (
@@ -17,8 +17,8 @@ const Nav = () => {
       <Link className="links" to={`/profile`}>
         PROFILE
       </Link>
-        </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Nav
+export default Nav;

@@ -1,0 +1,63 @@
+.wasteExamples {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.welcome {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.exampleDesc {
+  margin-top: 0;
+}
+
+.exampleCount {
+  margin-bottom: 0;
+}
+
+.landingPage {
+  text-align: center;
+  margin-top: 22%;
+}
+
+.example {
+  background-color: greenyellow;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.startButton {
+  font-family: "Century Gothic";
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  width: 203px;
+  height: 59px;
+  background: #d9d9d9;
+  border-radius: 18px;
+  border-color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exampleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
