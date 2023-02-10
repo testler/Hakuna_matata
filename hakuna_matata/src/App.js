@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Landing from './pages/Landing/Landing';
@@ -7,6 +6,7 @@ import Feed from './pages/Feed/Feed';
 import Favorites from './pages/Favorites/Favorites';
 import Map from './pages/Map/Map';
 import Profile from './pages/Profile/Profile';
+import PickLocation from './pages/PickLocation/PickLocation.jsx';
 function App() {
 
   let guestLogIn = false;

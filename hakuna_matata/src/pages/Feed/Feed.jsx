@@ -1,24 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import Modal from "react-modal";
-import { useState, FeedModal } from "react";
+import { useState } from "react";
+import FeedModal from "../../components/FeedModal/FeedModal";
 
-function Feed({ favArr }) {
+function Feed({favArr}) {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState(true);
 
   const modalOpen = (e) => {
     e.preventDefault();
-    setModalContent(
-      <FeedModal
-        post={{
-          timeframe: "Post Timeframe",
-          title: "Post Title",
-          description: "Post Description",
-          sold_out: "false",
-          image: "",
-        }}
-      />
-    );
+    setModalContent(<FeedModal post={{
+    timeframe: "Post Timeframe",
+    title: "Post Title",
+    description: "Post Description",
+    sold_out: "false",
+    image: "",
+  }}/>);
     setIsOpen(true);
   };
 
