@@ -14,6 +14,7 @@ const Nav = () => {
       <Link className="links" to={`/map`}>
         <img src={pin} />
       </Link>
+
       <Link className="links" to={`/favorites`}>
         <img src={favorites} />
       </Link>

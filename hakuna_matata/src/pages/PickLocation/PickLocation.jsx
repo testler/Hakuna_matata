@@ -2,10 +2,16 @@ import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./pickLocation.css";
+
 const PickLocation = () => {
+  let pin = process.env.PUBLIC_URL + "/icon/pin2.svg";
   const toggleNav = () => {
     document.getElementById("navBox").style.display = "flex";
   };
+
+  function hideIcon(self) {
+    self.style.backgroundImage = "none";
+  }
 
   useEffect(() => {
     document.getElementById("navBox").style.display = "none";
@@ -13,11 +19,21 @@ const PickLocation = () => {
 
   return (
     <div className="pickLocationPage">
-      <h1 className="landingLogo">Eco-Pantry</h1>
+      <img
+        className="landingLogo"
+        alt="Eco-Pantry"
+        src={process.env.PUBLIC_URL + "/images/eco-pantry-logo.png"}
+      />
       <form className="inputForm">
         <div className="locateBox">
-          <p>Where are you located?</p>
-          <input type="text" />
+          <p className="locationQuestion">Where are you located?</p>
+          <input
+            id="search"
+            name="search"
+            className="locationInput"
+            type="text"
+            onchange="hideIcon(this);"
+          />
         </div>
 
         <div className="options">
@@ -25,36 +41,44 @@ const PickLocation = () => {
           <div className="checkBoxes">
             <div className="checkBox">
               <input type="checkbox" value="pescetarian" />
-              pescetarian
+              <span> </span>pescetarian
+              <img src={process.env.PUBLIC_URL + "/icon/pes.svg"} />
             </div>
             <div className="checkBox">
               <input type="checkbox" value="gluten-free" />
-              gluten-free
+              <span> </span>gluten-free
+              <img src={process.env.PUBLIC_URL + "/icon/gf.svg"} />
             </div>
             <div className="checkBox">
               <input type="checkbox" value="vegan" />
-              vegan
+              <span> </span>vegan
+              <img src={process.env.PUBLIC_URL + "/icon/vegan.svg"} />
             </div>
             <div className="checkBox">
               <input type="checkbox" value="kosher" />
-              kosher
+              <span> </span>kosher
+              <img src={process.env.PUBLIC_URL + "/icon/kosher.svg"} />
             </div>
             <div className="checkBox">
               <input type="checkbox" value="vegetarian" />
-              vegetarian
+              <span> </span>vegetarian
+              <img src={process.env.PUBLIC_URL + "/icon/veg.svg"} />
             </div>
             <div className="checkBox">
               <input type="checkbox" value="dairy-free" />
-              dairy-free
+              <span> </span>dairy-free
+              <img src={process.env.PUBLIC_URL + "/icon/df.svg"} />
             </div>
             <div className="checkBox">
               <input type="checkbox" value="halal" />
-              halal
+              <span> </span>halal
+              <img src={process.env.PUBLIC_URL + "/icon/halal.svg"} />
             </div>
           </div>
         </div>
         <Link className="goButton" onClick={toggleNav} to={"/feed"}>
-          See Offer Now
+          See Offers Now
+          <img src={process.env.PUBLIC_URL + "/icon/arrow-right.svg"} />
         </Link>
       </form>
     </div>
