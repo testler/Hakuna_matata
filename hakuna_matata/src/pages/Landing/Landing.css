@@ -24,21 +24,30 @@
 
 .landingPage {
   text-align: center;
-  margin-top: 22%;
+  margin-top: 44%;
 }
 
 .example {
-  background-color: greenyellow;
   border-radius: 50%;
   height: 150px;
   width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+#example1 {
+  background-color: #abc3c9;
+}
+
+#example2 {
+  background-color: #98b8a3;
 }
 
 .startButton {
-  font-family: "Century Gothic";
   font-style: normal;
   text-decoration: none;
   color: black;
