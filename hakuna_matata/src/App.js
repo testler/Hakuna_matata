@@ -24,9 +24,11 @@ function App() {
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
+      {/* <div>  */}
       <div id="navBox">
         <Nav />
       </div>
+      {/* </div> */}
     </div>
   );
 }

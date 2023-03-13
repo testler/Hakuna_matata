@@ -1,7 +1,10 @@
-html,
 body,
 #root,
 #root > div {
   height: 100%;
   background-color: #f0ebe3;
+}
+
+html {
+  background-color: #000000a8;
 }

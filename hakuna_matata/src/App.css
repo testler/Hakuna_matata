@@ -11,15 +11,19 @@
 :root {
   --font-style1: "CenturyGothic-regular";
   --font-style2: "CenturyGothic-bold";
+  display: flex;
+  justify-content: center;
 }
 
 .App {
   font-family: CenturyGothic-regular;
+  max-width: 393px;
+  max-height: 852px;
 }
 
 div#navBox {
   display: none;
-  position: fixed;
+  position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -30,4 +34,6 @@ div#navBox {
   border-width: 2px;
   border-style: solid;
   border-color: black;
+  max-width: 393px;
+  height: auto;
 }
