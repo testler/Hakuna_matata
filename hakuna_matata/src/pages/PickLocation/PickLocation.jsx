@@ -4,9 +4,16 @@ import { Link } from "react-router-dom";
 import "./pickLocation.css";
 
 const PickLocation = () => {
+  const viewPortWidth = window.innerWidth;
+  var element = document.getElementById("html-element");
+  var positionInfo = element.offsetWidth;
+  console.log(positionInfo);
+  const navMargin = 0;
   let pin = process.env.PUBLIC_URL + "/icon/pin2.svg";
   const toggleNav = () => {
+    navMargin = viewPortWidth / 2 - 196;
     document.getElementById("navBox").style.display = "flex";
+    document.getElementById("navBox").style.margin = `0 0 0 ${navMargin}`;
   };
 
   function hideIcon(self) {
@@ -32,7 +39,7 @@ const PickLocation = () => {
             name="search"
             className="locationInput"
             type="text"
-            onchange="hideIcon(this);"
+            onChange="hideIcon(this);"
           />
         </div>
 
